@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Milk Tea Menu</title>
+    
+</head>
+<body>
+    <hr>
+    <h1 align="center">Milk-Tea Menu</h1>
+    
+    <div class="container">
+        <div class="item">
+            <div>
+                <h2>Classic Milk Tea</h2>
+                <p>Rich and creamy with a classic flavor.</p>
+            </div>
+            <div class="price">$4.00</div>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Matcha Milk Tea</h2>
+                <p>Green tea blended with milk for a refreshing taste.</p>
+            </div>
+            <div class="price">$4.50</div>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Taro Milk Tea</h2>
+                <p>A sweet and creamy purple drink made from taro root.</p>
+            </div>
+            <div class="price">$4.75</div>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Brown Sugar Milk Tea</h2>
+                <p>Smooth milk tea with a rich brown sugar syrup.</p>
+            </div>
+            <div class="price">$5.00</div>
+        </div>
+        <div class="item">
+            <div>
+                <h2>Jasmine Milk Tea</h2>
+                <p>A fragrant tea with delicate jasmine flavor.</p>
+            </div>
+            <div class="price">$4.25</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <footer>
+            <form>  
+                <label style="color: #FDFFFF" for="name">NAME</label>
+            <input type="name" name="name" id="name" placeholder="Youre Name"> 
+            <br>
+            <label style="color: #FDFFFF" for="address">ADDRESS</label>
+            <input type="address" name="adress" id="address" placeholder="Youre Address">
+            <br>
+            <label style="color: #FDFFFF" for="age">AGE</label>
+            <input type="age" name="age" id="age" placeholder="Youre Age">
+            <br>
+            <label style="color: #FDFFFF" for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="Youre Email">
+            
+            </form>
+        </footer>
+    </div>
+    <hr>
+</body>
+</html>body {
+    font-family: Arial, sans-serif;
+    background-color: #004225;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color:#E6E6FA;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.item {
+    background-color: #006A4E;
+    border: 9px solid #50C878;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item div:first-child {
+    flex: 1;
+}
+
+.item h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #E6E6FA;
+}
+
+.item p {
+    margin: 5px 0;
+    color: #FDFFFF;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3F9B0B;
+}
